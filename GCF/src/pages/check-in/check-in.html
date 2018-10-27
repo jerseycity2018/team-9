@@ -13,6 +13,31 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content padding class="page-check-in">
+  <div class="check-in-box">
+    <ion-row>
+      <ion-col>
+        <h2>Check In</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-item>
+            <ion-input type="text" placeholder="   Name" [(ngModel)]="name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-datetime placeholder="Date" displayFormat="MM/DD/YYYY" [(ngModel)]="date"></ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-datetime placeholder="Time in" displayFormat="hh:mm A" [(ngModel)]="timeIn"></ion-datetime>
+          </ion-item>
+          <ion-item>
+            <ion-datetime placeholder="Time out" displayFormat="hh:mm A" [(ngModel)]="timeOut"></ion-datetime>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </div>
+  <button ion-button full round style="background:#18c918"(click)="openPage('MainPage')">Check In</button>
 </ion-content>

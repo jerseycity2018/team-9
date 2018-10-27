@@ -7,13 +7,47 @@
 <ion-header>
 
   <ion-navbar>
-    <button ion-button menuToggle="right">Toggle Menu</button>
-    <ion-title>bulletin</ion-title>
+    <ion-title style="background-color: #99e68f">Bulletin</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="page-bulletin">
+<br>
+  <h2>Pick your location to check in</h2>
+  <div class="page-bulletin-box">
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background: #18c918" (click)="openPage('CanarsieFarmPage')">Canarsie Farm</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background: #18c918" (click)="openPage('BrownsvilleFarmPage')">Brownsville Farm</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background: #18c918" (click)="openPage('RedhookFarmPage')">Red Hook Farm</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background: #18c918" (click)="openPage('EastHarlemFarmPage')">East Harlem Farm</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background: #18c918" (click)="openPage('MorrisaniaFarmPage')">Morrisania Farm</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background: #18c918" (click)="openPage('NorthShoreFarmPage')">North Shore Farm</button>
+      </ion-row>
+    </ion-col>
+
+  </div>
 
 </ion-content>
