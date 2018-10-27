@@ -6,13 +6,31 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>main</ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-navbar>
+      <ion-title text-center>Home</ion-title>
+    </ion-navbar>
+  </ion-toolbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content class="home-page" padding>
+  <div class="home-button-box">
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background:#18c918"(click)="openPage('BulletinPage')">Bulletin</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background:#18c918"(click)="openPage('ProfilePage')">Profile</button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row>
+        <button ion-button full round style="background:#18c918"(click)="openPage('ReferralPage')">Referral</button>
+      </ion-row>
+    </ion-col>
+  </div>
 </ion-content>
