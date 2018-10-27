@@ -11,15 +11,33 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html',
+  templateUrl: 'login.html'
 })
 export class LoginPage {
 
+	username:string;
+	lastname:string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+	}
+
+	login() {
+		let checking = ['rachelBrown@rachel.xyz', 'carlSagan@cosmos.bbb'];
+		let password = ['password', 'rachelismybestfriend'];
+		for(let pls of checking){
+			if(pls == this.username){
+				for(let pass of password){
+					if(pass == this.lastname){
+						console.log('pew');
+					}
+				}
+			}
+		}
+	}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
 
 }
+
