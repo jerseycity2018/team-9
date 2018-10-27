@@ -7,8 +7,9 @@ function login(e) {
   var mydata = JSON.parse(data);
   for(var i = 0; i < mydata.length; i++) {
     if (mydata[i].email == userInput && mydata[i].password == passcode) {
-      return True;
+      console.log('hello');
     }
+    console.log('SIKE');
   }
   checkUserInput(input);
 }

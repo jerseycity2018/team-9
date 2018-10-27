@@ -11,7 +11,26 @@
   </ion-navbar>
 
 </ion-header>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
+<script>
+
+    $(function() {
+
+
+   var people = [];
+
+   $.getJSON('/team-9/data.json', function(data) {
+       $.each(data.data, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
+           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
+           $(tblRow).appendTo("#userdata tbody");
+     });
+
+   });
+
+});
+</script>
 
 <ion-content padding>
 
