@@ -13,6 +13,26 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="referral-page">
+  <div class="referral-box">
+    <ion-row>
+      <ion-col>
+        <h2>Referral</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <h6>Please enter the name of the person that referred you to this program</h6>
+          <ion-item>
+            <ion-input type="text" placeholder="Name" [(ngModel)]="name"></ion-input>
+          </ion-item>
 
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </div>
+  <br>
+  <br>
+  <button ion-button full round style="background:#18c918"(click)="openPage('MainPage')">Submit</button>
 </ion-content>
