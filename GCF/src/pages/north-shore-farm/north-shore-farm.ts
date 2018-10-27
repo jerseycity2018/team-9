@@ -22,4 +22,12 @@ export class NorthShoreFarmPage {
     console.log('ionViewDidLoad NorthShoreFarmPage');
   }
 
+  items = [
+    'North-Shore Farms'
+  ]
+
+  itemSelected(item: string) {
+    console.log("Selected item", item);
+  }
+
 }

@@ -22,4 +22,13 @@ export class EastHarlemFarmPage {
     console.log('ionViewDidLoad EastHarlemFarmPage');
   }
 
+  items = [
+    'East-Harlem Farms'
+  ]
+
+  itemSelected(item: string) {
+    console.log("Selected item", item);
+  }
+
+
 }

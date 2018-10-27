@@ -22,4 +22,13 @@ export class RedhookFarmPage {
     console.log('ionViewDidLoad RedhookFarmPage');
   }
 
+  items = [
+    'Red-Hook Farms'
+  ]
+
+  itemSelected(item: string) {
+    console.log("Selected item", item);
+  }
+
+
 }

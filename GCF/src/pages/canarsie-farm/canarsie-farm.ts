@@ -22,4 +22,13 @@ export class CanarsieFarmPage {
     console.log('ionViewDidLoad CanarsieFarmPage');
   }
 
+  items = [
+    'Carnasie Farms'
+  ]
+
+  itemSelected(item: string) {
+    console.log("Selected item", item);
+  }
+
+
 }

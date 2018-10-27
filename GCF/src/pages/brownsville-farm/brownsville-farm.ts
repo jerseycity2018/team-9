@@ -22,4 +22,12 @@ export class BrownsvilleFarmPage {
     console.log('ionViewDidLoad BrownsvilleFarmPage');
   }
 
+  items = [
+    'Brownsville Farms'
+  ]
+
+  itemSelected(item: string) {
+    console.log("Selected item", item);
+  }
+
 }

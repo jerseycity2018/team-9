@@ -22,4 +22,12 @@ export class MorrisaniaFarmPage {
     console.log('ionViewDidLoad MorrisaniaFarmPage');
   }
 
+  items = [
+    'Morrisania Farms'
+  ]
+
+  itemSelected(item: string) {
+    console.log("Selected item", item);
+  }
+
 }
