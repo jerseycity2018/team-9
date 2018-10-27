@@ -1,0 +1,22 @@
+{
+    "user": [
+        {
+            "volunteerID": "12345",
+            "firstName": "Rachel",
+            "lastName": "Brown",
+            "phoneNumber": "1234567890",
+            "email": "rachelBrown@rachel.xyz",
+            "password": "password",
+            "volunteeringHours": "20"
+        },
+        {
+            "volunteerID": "12346",
+            "firstName": "Carl",
+            "lastName": "Sagan",
+            "phoneNumber": "0987654321",
+            "email": "carlSagan@cosmos.bbb",
+            "password": "rachelismybestfriend",
+            "volunteeringHours": "0"
+        }
+    ]
+}

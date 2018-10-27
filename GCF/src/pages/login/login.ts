@@ -1,6 +1,6 @@
-import {Component, ViewChild} from '@angular/core';
-import {IonicPage, Nav, NavController, NavParams} from 'ionic-angular';
-// import {BulletinPage} from "../bulletin/bulletin";
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
 /**
  * Generated class for the LoginPage page.
  *
@@ -11,13 +11,28 @@ import {IonicPage, Nav, NavController, NavParams} from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-login',
-  templateUrl: 'login.html',
+  templateUrl: 'login.html'
 })
 export class LoginPage {
 
-   // @ViewChild(Nav) nav: Nav;
+  username:string;
+  lastname:string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  login() {
+    let checking = ['rachelBrown@rachel.xyz', 'carlSagan@cosmos.bbb'];
+    let password = ['password', 'rachelismybestfriend'];
+    for(let pls of checking){
+      if(pls == this.username){
+        for(let pass of password){
+          if(pass == this.lastname){
+            console.log('pew');
+          }
+        }
+      }
+    }
   }
 
   ionViewDidLoad() {
@@ -29,6 +44,5 @@ export class LoginPage {
     // we wouldn't want the back button to show in this scenario
     this.navCtrl.push('BulletinPage');
   }
+
 }
-
-
